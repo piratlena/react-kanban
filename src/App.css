@@ -46,6 +46,8 @@ h1 {
 
 .drag-container {
   margin: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .drag-list {
@@ -70,6 +72,26 @@ h1 {
 .backlog-column .solid:hover,
 .backlog-column .over {
   background-color: var(--column-1);
+}
+.progress-column .header,
+.progress-column .solid,
+.progress-column .solid:hover,
+.progress-column .over {
+  background-color: var(--column-2);
+}
+
+.complete-column .header,
+.complete-column .solid,
+.complete-column .solid:hover,
+.complete-column .over {
+  background-color: var(--column-3);
+}
+
+.on-hold-column .header,
+.on-hold-column .solid,
+.on-hold-column .solid:hover,
+.on-hold-column .over {
+  background-color: var(--column-4);
 }
 
 .custom-scroll {
